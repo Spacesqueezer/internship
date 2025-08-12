@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<meta charset="UTF-8">
+	<title>Задания</title>
+	{% load static %}
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f9f4;
+			color: #333;
+			margin: 0;
+			padding: 20px;
+		}
+
+		h1 {
+			color: #2e7d32;
+			margin-bottom: 30px;
+		}
+
+		#nav-buttons {
+			margin-bottom: 20px;
+		}
+
+		#nav-buttons button {
+			padding: 12px 24px;
+			margin-right: 10px;
+			background-color: #e8f5e9;
+			color: #2e7d32;
+			border: 1px solid #c8e6c9;
+			border-radius: 6px;
+			cursor: pointer;
+			transition: background 0.3s, color 0.3s;
+		}
+
+		#nav-buttons button:hover {
+			background-color: #c8e6c9;
+		}
+
+		#content-container {
+			border: 1px solid #c8e6c9;
+			background: #ffffff;
+			padding: 20px;
+			border-radius: 6px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+			min-height: 100px;
+		}
+	</style>
 </head>
 <body>
+
+<h1>Добрый день, {{ user.first_name }} {{ user.last_name }}</h1>
 
 </body>
 </html>

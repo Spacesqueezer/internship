@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a44a6eba-ab41-47e5-a13b-637b45c07106" name="Changes" comment="git init">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/integration_utils" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reqs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1/urls.py" afterDir="false" />
+    <list default="true" id="a44a6eba-ab41-47e5-a13b-637b45c07106" name="Changes" comment="safe point">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internship/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/internship/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internship/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/internship/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reqs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reqs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/task1/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1754956244372</updated>
       <workItem from="1754956258324" duration="681000" />
-      <workItem from="1754956954268" duration="1523000" />
+      <workItem from="1754956954268" duration="2130000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <option name="closed" value="true" />
@@ -126,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754957046200</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="safe point">
+      <option name="closed" value="true" />
+      <created>1754958755729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1754958755729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
-    <option name="LAST_COMMIT_MESSAGE" value="git init" />
+    <MESSAGE value="safe point" />
+    <option name="LAST_COMMIT_MESSAGE" value="safe point" />
   </component>
 </project>

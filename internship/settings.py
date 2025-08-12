@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'integration_utils',
-    # 'integration_utils.bitrix24',
+    'integration_utils.bitrix24',
     'task1',
 ]
 
