@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a44a6eba-ab41-47e5-a13b-637b45c07106" name="Changes" comment="safe point">
+    <list default="true" id="a44a6eba-ab41-47e5-a13b-637b45c07106" name="Changes" comment="Проект запускается, отображается страница с приветствием">
+      <change afterPath="$PROJECT_DIR$/task1/templates/last_deals.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internship/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/internship/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reqs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reqs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task1/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/task1/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -110,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1754956244372</updated>
       <workItem from="1754956258324" duration="681000" />
-      <workItem from="1754956954268" duration="2130000" />
+      <workItem from="1754956954268" duration="4088000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <option name="closed" value="true" />
@@ -128,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754958755729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Проект запускается, отображается страница с приветствием">
+      <option name="closed" value="true" />
+      <created>1754959278117</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1754959278117</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
     <MESSAGE value="safe point" />
-    <option name="LAST_COMMIT_MESSAGE" value="safe point" />
+    <MESSAGE value="Проект запускается, отображается страница с приветствием" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проект запускается, отображается страница с приветствием" />
   </component>
 </project>

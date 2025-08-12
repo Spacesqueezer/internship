@@ -13,18 +13,20 @@
 			padding: 20px;
 		}
 
-		h1 {
-			color: #2e7d32;
+		.header-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 			margin-bottom: 30px;
 		}
 
-		#nav-buttons {
-			margin-bottom: 20px;
+		h1 {
+			color: #2e7d32;
+			margin: 0;
 		}
 
-		#nav-buttons button {
+		#header-button {
 			padding: 12px 24px;
-			margin-right: 10px;
 			background-color: #e8f5e9;
 			color: #2e7d32;
 			border: 1px solid #c8e6c9;
@@ -33,7 +35,7 @@
 			transition: background 0.3s, color 0.3s;
 		}
 
-		#nav-buttons button:hover {
+		#header-button:hover {
 			background-color: #c8e6c9;
 		}
 
@@ -43,13 +45,39 @@
 			padding: 20px;
 			border-radius: 6px;
 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-			min-height: 100px;
+			min-height: 300px; /* Под таблицу */
 		}
 	</style>
 </head>
 <body>
 
-<h1>Добрый день, {{ user.first_name }} {{ user.last_name }}</h1>
+<div class="header-container">
+	<h1>Добрый день, {{ user.first_name }} {{ user.last_name }}</h1>
+	<button id="header-button">Добавить</button>
+</div>
+
+<div id="content-container">
+	<!-- Здесь будет таблица -->
+</div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+	fetch('/get_last_deals/')
+		.then(response => {
+			if (!response.ok) {
+				throw new Error('Ошибка сети');
+			}
+			return response.text(); // Получаем текст (HTML)
+		})
+		.then(html => {
+			document.getElementById('content-container').innerHTML = html;
+		})
+		.catch(error => {
+			document.getElementById('content-container').innerHTML = `<p>Ошибка загрузки данных: ${error.message}</p>`;
+		});
+});
+</script>
+
 
 </body>
 </html>
