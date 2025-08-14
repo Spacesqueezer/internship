@@ -15,7 +15,7 @@ def get_last_deals(request):
 	# Задаём параметры для получения сделок
 	params = {
 		"filter": {
-			"STAGE_SEMANTIC_ID": "P" # Получение активных сделок
+			"STAGE_SEMANTIC_ID": "P"     # Получение активных сделок
 		},
 		"select": ["TITLE",              # Название
 				   "STAGE_ID",           # Стадия
