@@ -17,10 +17,11 @@ def get_last_deals(request):
 		"filter": {
 			"STAGE_SEMANTIC_ID": "P" # Получение активных сделок
 		},
-		"select": ["TITLE", # Название
-				   "STAGE_ID", # Стадия
-				   "DATE_CREATE", # Дата создания
-				   "OPPORTUNITY" # Сумма
+		"select": ["TITLE",              # Название
+				   "STAGE_ID",           # Стадия
+				   "DATE_CREATE",        # Дата создания
+				   "OPPORTUNITY",        # Сумма
+				   "UF_CRM_1755065188"   # Кастомный текст
 				   ],
 		"order": {"DATE_CREATE": "DESC"},
 	}
@@ -43,16 +44,16 @@ def create_deal(request):
 		# Получаем данные из формы
 		title = request.POST.get('title')
 		price = request.POST.get('price')
-		comments = request.POST.get('comments', '')
+		custom_text = request.POST.get('custom_text')
 
 		try:
-			# Создаем сделку в Битрикс24
+			# Создаем сделку
 			response = request.bitrix_user_token.call_api_method('crm.deal.add', {
 				"fields": {
-					"TITLE": title,         # Название
-					"OPPORTUNITY": price,   # Сумма сделки
-					"STAGE_ID": "NEW",      # Этап "Новая"
-					"BEGINDATE": datetime.now().strftime("%Y-%m-%d %H:%M:%S"), # Дата создания
+					"TITLE": title,                     # Название
+					"OPPORTUNITY": price,               # Сумма сделки
+					"STAGE_ID": "NEW",                  # Этап "Новая"
+					"UF_CRM_1755065188": custom_text    # Кастомный текст
 				}
 			})
 

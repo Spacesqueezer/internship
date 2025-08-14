@@ -39,26 +39,30 @@
 </style>
 
 <table class="deals-table">
-	<thead>
-		<tr>
-			<th>Название</th>
-			<th>Стадия</th>
-			<th>Сумма</th>
-			<th>Дата создания</th>
-		</tr>
-	</thead>
-	<tbody>
-		{% for deal in deals %}
-			<tr>
-				<td>{{ deal.TITLE }}</td>
-				<td>{{ deal.STAGE_ID }}</td>
-				<td>{{ deal.OPPORTUNITY }}</td>
-				<td>{{ deal.DATE_CREATE }}</td>
-			</tr>
-		{% empty %}
-			<tr>
-				<td colspan="4">Сделки не найдены.</td>
-			</tr>
-		{% endfor %}
-	</tbody>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Название</th>
+            <th>Стадия</th>
+            <th>Сумма</th>
+            <th>Дата создания</th>
+            <th>Кастомный текст</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for deal in deals %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ deal.TITLE }}</td>
+                <td>{{ deal.STAGE_ID }}</td>
+                <td>{{ deal.OPPORTUNITY }}</td>
+                <td>{{ deal.DATE_CREATE }}</td>
+                <td>{{ deal.UF_CRM_1755065188 }}</td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="4">Сделки не найдены.</td>
+            </tr>
+        {% endfor %}
+    </tbody>
 </table>
